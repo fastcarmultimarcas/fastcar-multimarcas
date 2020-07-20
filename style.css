@@ -1,0 +1,194 @@
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kaushan Script', cursive;
+}
+
+/* Achor Scroll */
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Cabeçalho */
+
+header{
+    background-image: url(../img/wallpapper.jpg);
+}
+
+/* Sobre Nós */
+
+#sobre{
+    background-image: url(../img/about.jpg);
+    color: white;
+}
+
+#sobre img{
+    width: 100%;
+    margin-top: 65px;
+}
+
+#sobre h1{
+    font-size: 80pt;
+    text-shadow: black 3px 3px;
+    margin-top: 65px;
+}
+
+#sobre p{
+    font-size: 25pt;
+    margin-top: 65px;
+    text-shadow: 2px 2px 4px black;
+}
+
+@media screen and (max-width: 1203px){
+
+    #sobre h1{
+        font-size: 60pt;
+        margin-top: 0;
+    }
+
+    #sobre img{
+        margin-top: 0;
+    }
+
+    #sobre p{
+        font-size: 20pt;
+    }
+}
+
+/* Cards */
+
+#services{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(../img/services.jpg);
+}
+
+.card{
+
+    position: relative;
+    background: #fff;
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.card .content{
+
+    width: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+.card .content p{
+    font-size: 15pt;
+    font-family: 'Sedgwick Ave', cursive;
+}
+
+.card .sliderText{
+
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/venda.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: #94d3dc;
+}
+
+.content h3{
+    text-align: center;
+}
+
+.swiper-slide:nth-child(2) .sliderText{
+    background-image: url(../img/troca.jpg);
+}
+
+.swiper-slide:nth-child(3) .sliderText{
+    background-image: url(../img/finan.png);
+}
+
+.swiper-slide:nth-child(4) .sliderText{
+    background-image: url(../img/consig.png);
+}
+
+.swiper-slide:nth-child(5) .sliderText{
+    background-image: url(../img/emprestimo.jpg);
+}
+
+#servicosimg{
+    width: 50%;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Localização */
+
+#localizacao{
+    background-image: url(../img/local.jpg);
+}
+
+@media screen and (max-width: 736px){
+
+    #localizacao iframe{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Footer */
+
+.newsletter{
+    text-align: center;
+    background-image: url(../img/wallpapper.jpg); 
+    height: 300px;
+    font-family: 'Sedgwick Ave', cursive;
+    color: white;
+}
+
+.newsletter h2{
+    opacity: 0;
+}
+
+.footer-main h2{
+    font-size: 30pt;
+}
+
+.footer-main a{
+    font-family: 'Sedgwick Ave', cursive;
+    color: inherit;
+    padding: 7px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.footer-main a:hover{
+    text-shadow: 2px 2px 5px black;
+    transition: 0.5s;
+    font-size: 115%;
+}    
+
+footer{
+    background-color: black;
+    border-top: 2px solid white;
+    height: 75px;
+    text-align: center;
+}
+
+footer h4{
+    margin-top: 15px;
+    font-size: 16pt;
+    font-family: 'Bahnschrift';
+    color: white;
+}
